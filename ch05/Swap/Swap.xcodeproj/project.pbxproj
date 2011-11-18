@@ -1,0 +1,289 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DD410AD01476D26F00258FD5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD410ACF1476D26F00258FD5 /* UIKit.framework */; };
+		DD410AD21476D26F00258FD5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD410AD11476D26F00258FD5 /* Foundation.framework */; };
+		DD410AD41476D26F00258FD5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD410AD31476D26F00258FD5 /* CoreGraphics.framework */; };
+		DD410ADA1476D26F00258FD5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DD410AD81476D26F00258FD5 /* InfoPlist.strings */; };
+		DD410ADC1476D26F00258FD5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD410ADB1476D26F00258FD5 /* main.m */; };
+		DD410AE01476D26F00258FD5 /* SwapAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD410ADF1476D26F00258FD5 /* SwapAppDelegate.m */; };
+		DD410AE31476D26F00258FD5 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD410AE11476D26F00258FD5 /* MainWindow.xib */; };
+		DD410AE61476D26F00258FD5 /* SwapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD410AE51476D26F00258FD5 /* SwapViewController.m */; };
+		DD410B091476E21C00258FD5 /* SwapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD410AE71476D26F00258FD5 /* SwapViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DD410ACB1476D26F00258FD5 /* Swap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD410ACF1476D26F00258FD5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DD410AD11476D26F00258FD5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DD410AD31476D26F00258FD5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DD410AD71476D26F00258FD5 /* Swap-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Swap-Info.plist"; sourceTree = "<group>"; };
+		DD410AD91476D26F00258FD5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DD410ADB1476D26F00258FD5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DD410ADD1476D26F00258FD5 /* Swap-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Swap-Prefix.pch"; sourceTree = "<group>"; };
+		DD410ADE1476D26F00258FD5 /* SwapAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwapAppDelegate.h; sourceTree = "<group>"; };
+		DD410ADF1476D26F00258FD5 /* SwapAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwapAppDelegate.m; sourceTree = "<group>"; };
+		DD410AE21476D26F00258FD5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		DD410AE41476D26F00258FD5 /* SwapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwapViewController.h; sourceTree = "<group>"; };
+		DD410AE51476D26F00258FD5 /* SwapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwapViewController.m; sourceTree = "<group>"; };
+		DD410AE81476D26F00258FD5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SwapViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD410AC81476D26F00258FD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD410AD01476D26F00258FD5 /* UIKit.framework in Frameworks */,
+				DD410AD21476D26F00258FD5 /* Foundation.framework in Frameworks */,
+				DD410AD41476D26F00258FD5 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DD410AC01476D26F00258FD5 = {
+			isa = PBXGroup;
+			children = (
+				DD410AD51476D26F00258FD5 /* Swap */,
+				DD410ACE1476D26F00258FD5 /* Frameworks */,
+				DD410ACC1476D26F00258FD5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DD410ACC1476D26F00258FD5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD410ACB1476D26F00258FD5 /* Swap.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD410ACE1476D26F00258FD5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD410ACF1476D26F00258FD5 /* UIKit.framework */,
+				DD410AD11476D26F00258FD5 /* Foundation.framework */,
+				DD410AD31476D26F00258FD5 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD410AD51476D26F00258FD5 /* Swap */ = {
+			isa = PBXGroup;
+			children = (
+				DD410ADE1476D26F00258FD5 /* SwapAppDelegate.h */,
+				DD410ADF1476D26F00258FD5 /* SwapAppDelegate.m */,
+				DD410AE11476D26F00258FD5 /* MainWindow.xib */,
+				DD410AE41476D26F00258FD5 /* SwapViewController.h */,
+				DD410AE51476D26F00258FD5 /* SwapViewController.m */,
+				DD410AE71476D26F00258FD5 /* SwapViewController.xib */,
+				DD410AD61476D26F00258FD5 /* Supporting Files */,
+			);
+			path = Swap;
+			sourceTree = "<group>";
+		};
+		DD410AD61476D26F00258FD5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DD410AD71476D26F00258FD5 /* Swap-Info.plist */,
+				DD410AD81476D26F00258FD5 /* InfoPlist.strings */,
+				DD410ADB1476D26F00258FD5 /* main.m */,
+				DD410ADD1476D26F00258FD5 /* Swap-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD410ACA1476D26F00258FD5 /* Swap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD410AEC1476D26F00258FD5 /* Build configuration list for PBXNativeTarget "Swap" */;
+			buildPhases = (
+				DD410AC71476D26F00258FD5 /* Sources */,
+				DD410AC81476D26F00258FD5 /* Frameworks */,
+				DD410AC91476D26F00258FD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Swap;
+			productName = Swap;
+			productReference = DD410ACB1476D26F00258FD5 /* Swap.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD410AC21476D26F00258FD5 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = DD410AC51476D26F00258FD5 /* Build configuration list for PBXProject "Swap" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DD410AC01476D26F00258FD5;
+			productRefGroup = DD410ACC1476D26F00258FD5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD410ACA1476D26F00258FD5 /* Swap */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD410AC91476D26F00258FD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD410ADA1476D26F00258FD5 /* InfoPlist.strings in Resources */,
+				DD410AE31476D26F00258FD5 /* MainWindow.xib in Resources */,
+				DD410B091476E21C00258FD5 /* SwapViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD410AC71476D26F00258FD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD410ADC1476D26F00258FD5 /* main.m in Sources */,
+				DD410AE01476D26F00258FD5 /* SwapAppDelegate.m in Sources */,
+				DD410AE61476D26F00258FD5 /* SwapViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DD410AD81476D26F00258FD5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD410AD91476D26F00258FD5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DD410AE11476D26F00258FD5 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD410AE21476D26F00258FD5 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		DD410AE71476D26F00258FD5 /* SwapViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD410AE81476D26F00258FD5 /* en */,
+			);
+			name = SwapViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DD410AEA1476D26F00258FD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DD410AEB1476D26F00258FD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DD410AED1476D26F00258FD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Swap/Swap-Prefix.pch";
+				INFOPLIST_FILE = "Swap/Swap-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DD410AEE1476D26F00258FD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Swap/Swap-Prefix.pch";
+				INFOPLIST_FILE = "Swap/Swap-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD410AC51476D26F00258FD5 /* Build configuration list for PBXProject "Swap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD410AEA1476D26F00258FD5 /* Debug */,
+				DD410AEB1476D26F00258FD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD410AEC1476D26F00258FD5 /* Build configuration list for PBXNativeTarget "Swap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD410AED1476D26F00258FD5 /* Debug */,
+				DD410AEE1476D26F00258FD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DD410AC21476D26F00258FD5 /* Project object */;
+}
