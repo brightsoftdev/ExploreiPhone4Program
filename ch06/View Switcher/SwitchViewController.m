@@ -75,23 +75,65 @@
 }
 
 -(IBAction)switchView:(id)sender{
+    
+    [UIView beginAnimations:@"View Flip" context:nil];
+    [UIView setAnimationDuration:1.25];
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
+    
     if (self.yellowViewController.view.superview == nil) {
-        if (self.yellowViewController == nil) {
-            YellowViewController *yellowViewController = [[YellowViewController alloc]initWithNibName:@"YellowView" bundle:nil];
+        if (self.yellowViewController ==nil) {
+            YellowViewController *yellowController = [[YellowViewController alloc]initWithNibName:@"YellowView" bundle:nil];
             self.yellowViewController = yellowViewController;
             [yellowViewController release];
         }
+        [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:self.view cache:YES];
+        
+        [blueViewController viewDidDisappear:YES];
+        [yellowViewController viewWillAppear:YES];
+        
         [blueViewController.view removeFromSuperview];
         [self.view insertSubview:yellowViewController atIndex:0];
+        [blueViewController viewDidAppear:YES];
     } else {
         if (self.blueViewController == nil) {
-            BlueViewController *blueViewController = [[BlueViewController alloc]initWithNibName:@"BlueView" bundle:nil];
+            BlueViewController *blueController = [[BlueViewController alloc]initWithNibName:@"blueView" bundle:nil];
             self.blueViewController = blueViewController;
             [blueViewController release];
         }
+        [yellowViewController viewDidAppear:YES];
+        [blueViewController viewDidAppear:YES];
+        
         [yellowViewController.view removeFromSuperview];
-        [self.view insertSubview:blueViewController atIndex:0];
+        [self.view insertSubview:blueViewController.view atIndex:0];
+        [blueViewController viewDidDisappear:YES];
+        [yellowViewController viewDidAppear:YES];
     }
+    
+    [UIView commitAnimations];
+    
+//    if (self.yellowViewController.view.superview == nil) {
+//        if (self.yellowViewController == nil) {
+//            
+//            YellowViewController *yellowViewController = [[YellowViewController alloc]initWithNibName:@"YellowView" bundle:nil];
+//            self.yellowViewController = yellowViewController;
+//            [yellowViewController release];
+//            
+//        }
+//        [blueViewController.view removeFromSuperview];
+//        [self.view insertSubview:yellowViewController atIndex:0];
+//        
+//    } else {
+//        
+//        if (self.blueViewController == nil) {
+//            BlueViewController *blueViewController = [[BlueViewController alloc]initWithNibName:@"BlueView" bundle:nil];
+//            self.blueViewController = blueViewController;
+//            [blueViewController release];
+//        }
+//        [yellowViewController.view removeFromSuperview];
+//        [self.view insertSubview:blueViewController atIndex:0];
+//        
+//    }
+
 }
 
 @end
