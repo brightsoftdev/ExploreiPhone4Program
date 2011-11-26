@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		DD8D8D7814813F8100B275FE /* statedictionary.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD8D8D7714813F8100B275FE /* statedictionary.plist */; };
+		DD8D8D80148151D900B275FE /* apple.png in Resources */ = {isa = PBXBuildFile; fileRef = DD8D8D7A148151D900B275FE /* apple.png */; };
+		DD8D8D81148151D900B275FE /* bar.png in Resources */ = {isa = PBXBuildFile; fileRef = DD8D8D7B148151D900B275FE /* bar.png */; };
+		DD8D8D82148151D900B275FE /* cherry.png in Resources */ = {isa = PBXBuildFile; fileRef = DD8D8D7C148151D900B275FE /* cherry.png */; };
+		DD8D8D83148151D900B275FE /* crown.png in Resources */ = {isa = PBXBuildFile; fileRef = DD8D8D7D148151D900B275FE /* crown.png */; };
+		DD8D8D84148151D900B275FE /* lemon.png in Resources */ = {isa = PBXBuildFile; fileRef = DD8D8D7E148151D900B275FE /* lemon.png */; };
+		DD8D8D85148151D900B275FE /* seven.png in Resources */ = {isa = PBXBuildFile; fileRef = DD8D8D7F148151D900B275FE /* seven.png */; };
+		DD8D8D8814815BA700B275FE /* crunch.wav in Resources */ = {isa = PBXBuildFile; fileRef = DD8D8D8614815BA700B275FE /* crunch.wav */; };
+		DD8D8D8914815BA700B275FE /* win.wav in Resources */ = {isa = PBXBuildFile; fileRef = DD8D8D8714815BA700B275FE /* win.wav */; };
+		DD8D8D8B14815FB000B275FE /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD8D8D8A14815FB000B275FE /* AudioToolbox.framework */; };
 		DDB7D1E31481089700595CA4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDB7D1E21481089700595CA4 /* UIKit.framework */; };
 		DDB7D1E51481089700595CA4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDB7D1E41481089700595CA4 /* Foundation.framework */; };
 		DDB7D1E71481089700595CA4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDB7D1E61481089700595CA4 /* CoreGraphics.framework */; };
@@ -34,6 +43,15 @@
 
 /* Begin PBXFileReference section */
 		DD8D8D7714813F8100B275FE /* statedictionary.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = statedictionary.plist; sourceTree = "<group>"; };
+		DD8D8D7A148151D900B275FE /* apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple.png; sourceTree = "<group>"; };
+		DD8D8D7B148151D900B275FE /* bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bar.png; sourceTree = "<group>"; };
+		DD8D8D7C148151D900B275FE /* cherry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cherry.png; sourceTree = "<group>"; };
+		DD8D8D7D148151D900B275FE /* crown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crown.png; sourceTree = "<group>"; };
+		DD8D8D7E148151D900B275FE /* lemon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lemon.png; sourceTree = "<group>"; };
+		DD8D8D7F148151D900B275FE /* seven.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = seven.png; sourceTree = "<group>"; };
+		DD8D8D8614815BA700B275FE /* crunch.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = crunch.wav; sourceTree = "<group>"; };
+		DD8D8D8714815BA700B275FE /* win.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = win.wav; sourceTree = "<group>"; };
+		DD8D8D8A14815FB000B275FE /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		DDB7D1DE1481089700595CA4 /* Pickers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pickers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDB7D1E21481089700595CA4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DDB7D1E41481089700595CA4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -72,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD8D8D8B14815FB000B275FE /* AudioToolbox.framework in Frameworks */,
 				DDB7D1E31481089700595CA4 /* UIKit.framework in Frameworks */,
 				DDB7D1E51481089700595CA4 /* Foundation.framework in Frameworks */,
 				DDB7D1E71481089700595CA4 /* CoreGraphics.framework in Frameworks */,
@@ -105,6 +124,14 @@
 				DDB7D21814810D0700595CA4 /* singleicon.png */,
 				DDB7D21914810D0700595CA4 /* toolicon.png */,
 				DD8D8D7714813F8100B275FE /* statedictionary.plist */,
+				DD8D8D7A148151D900B275FE /* apple.png */,
+				DD8D8D7B148151D900B275FE /* bar.png */,
+				DD8D8D7C148151D900B275FE /* cherry.png */,
+				DD8D8D7D148151D900B275FE /* crown.png */,
+				DD8D8D7E148151D900B275FE /* lemon.png */,
+				DD8D8D7F148151D900B275FE /* seven.png */,
+				DD8D8D8614815BA700B275FE /* crunch.wav */,
+				DD8D8D8714815BA700B275FE /* win.wav */,
 				DDB7D1E81481089700595CA4 /* Pickers */,
 				DDB7D1E11481089700595CA4 /* Frameworks */,
 				DDB7D1DF1481089700595CA4 /* Products */,
@@ -122,6 +149,7 @@
 		DDB7D1E11481089700595CA4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DD8D8D8A14815FB000B275FE /* AudioToolbox.framework */,
 				DDB7D1E21481089700595CA4 /* UIKit.framework */,
 				DDB7D1E41481089700595CA4 /* Foundation.framework */,
 				DDB7D1E61481089700595CA4 /* CoreGraphics.framework */,
@@ -211,6 +239,14 @@
 				DDB7D21D14810D0700595CA4 /* singleicon.png in Resources */,
 				DDB7D21E14810D0700595CA4 /* toolicon.png in Resources */,
 				DD8D8D7814813F8100B275FE /* statedictionary.plist in Resources */,
+				DD8D8D80148151D900B275FE /* apple.png in Resources */,
+				DD8D8D81148151D900B275FE /* bar.png in Resources */,
+				DD8D8D82148151D900B275FE /* cherry.png in Resources */,
+				DD8D8D83148151D900B275FE /* crown.png in Resources */,
+				DD8D8D84148151D900B275FE /* lemon.png in Resources */,
+				DD8D8D85148151D900B275FE /* seven.png in Resources */,
+				DD8D8D8814815BA700B275FE /* crunch.wav in Resources */,
+				DD8D8D8914815BA700B275FE /* win.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
