@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DataPickerViewController : UIViewController
+@interface DataPickerViewController : UIViewController{
+    
+    UIDatePicker *datePicker;
+    
+}
+@property (nonatomic, retain) IBOutlet UIDatePicker *datePicker;
+
+-(IBAction)buttonPressed;
 
 @end

@@ -9,6 +9,8 @@
 #import "DataPickerViewController.h"
 
 @implementation DataPickerViewController
+@synthesize datePicker;
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -32,11 +34,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    NSDate *now = [[NSDate alloc]init];
+    [datePicker setDate:now animated:NO];
+    [now release];
     // Do any additional setup after loading the view from its nib.
 }
 
 - (void)viewDidUnload
 {
+    self.datePicker = nil;
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -46,6 +52,15 @@
 {
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+-(IBAction)buttonPressed{
+    
+    NSDate *selected = [datePicker date];
+    NSString *message = [[NSString alloc]initWithFormat:@"The Date and time you selected id :%@",selected];
+    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Date and Time Selected" message:message delegate:nil cancelButtonTitle:@"Yes, I did." otherButtonTitles:nil];
+    [alert show];
+    [alert release];
 }
 
 @end
