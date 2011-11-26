@@ -9,6 +9,8 @@
 #import "SingleComponentPickerViewController.h"
 
 @implementation SingleComponentPickerViewController
+@synthesize picketData;
+@synthesize singlePicker;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -32,12 +34,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    NSArray *array = [[NSArray alloc]initWithObjects:@"Luke",@"Leia",@"Han",@"Chewbacca",@"Artoo",@"Threepio",@"Lando", nil];
+    self.picketData = array;
+    [array release];
     // Do any additional setup after loading the view from its nib.
 }
 
 - (void)viewDidUnload
 {
     [super viewDidUnload];
+    self.singlePicker = nil;
+    self.picketData = nil;
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
 }
@@ -48,4 +55,29 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+-(IBAction)buttonPressde{
+    
+    NSInteger row = [singlePicker selectedRowInComponent:0];
+    NSString *selected = [picketData objectAtIndex:row];
+    NSString *title = [[NSString alloc]initWithFormat:@"You selected %@!",selected];
+    UIAlertView *alert =[[UIAlertView alloc]initWithTitle:title message:@"Thank you for choosing" delegate:nil cancelButtonTitle:@"You're Welcome" otherButtonTitles: nil];
+    [alert show];
+    [alert release];
+    [title release];
+    
+}
+
+#pragma mark -
+#pragma mark Picker Data Source Methods
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
+    return  1;
+}
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component{
+    return [picketData count];
+}
+
+#pragma  mark Picker Delegate Methods
+- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component{
+    return [picketData objectAtIndex:row];
+}
 @end
