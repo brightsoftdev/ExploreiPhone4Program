@@ -7,7 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#define kFillingComponent 0
+#define kBreadComponent 1
 
-@interface DoubleComponentPickerViewController : UIViewController
+@interface DoubleComponentPickerViewController : UIViewController <UIPickerViewDelegate,UIPickerViewDataSource>{
+    
+    UIPickerView *dublePicker;
+    NSArray *fillingTypes;
+    NSArray *breadTypes;
+    
+}
+@property (nonatomic, retain) IBOutlet UIPickerView *dublePicker;
+@property (nonatomic, retain) IBOutlet NSArray *fillingTypes;
+@property (nonatomic, retain) IBOutlet NSArray *breadTypes;
+
+-(IBAction)buttonPressed;
 
 @end
