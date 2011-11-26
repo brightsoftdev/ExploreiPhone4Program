@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD8D8D7814813F8100B275FE /* statedictionary.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD8D8D7714813F8100B275FE /* statedictionary.plist */; };
 		DDB7D1E31481089700595CA4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDB7D1E21481089700595CA4 /* UIKit.framework */; };
 		DDB7D1E51481089700595CA4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDB7D1E41481089700595CA4 /* Foundation.framework */; };
 		DDB7D1E71481089700595CA4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDB7D1E61481089700595CA4 /* CoreGraphics.framework */; };
@@ -32,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD8D8D7714813F8100B275FE /* statedictionary.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = statedictionary.plist; sourceTree = "<group>"; };
 		DDB7D1DE1481089700595CA4 /* Pickers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pickers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDB7D1E21481089700595CA4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DDB7D1E41481089700595CA4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -102,6 +104,7 @@
 				DDB7D21714810D0700595CA4 /* doubleicon.png */,
 				DDB7D21814810D0700595CA4 /* singleicon.png */,
 				DDB7D21914810D0700595CA4 /* toolicon.png */,
+				DD8D8D7714813F8100B275FE /* statedictionary.plist */,
 				DDB7D1E81481089700595CA4 /* Pickers */,
 				DDB7D1E11481089700595CA4 /* Frameworks */,
 				DDB7D1DF1481089700595CA4 /* Products */,
@@ -207,6 +210,7 @@
 				DDB7D21C14810D0700595CA4 /* doubleicon.png in Resources */,
 				DDB7D21D14810D0700595CA4 /* singleicon.png in Resources */,
 				DDB7D21E14810D0700595CA4 /* toolicon.png in Resources */,
+				DD8D8D7814813F8100B275FE /* statedictionary.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +337,7 @@
 				DDB7D1FB1481089700595CA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
