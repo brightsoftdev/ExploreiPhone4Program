@@ -16,6 +16,7 @@
 		DD8D8DE2148367E900B275FE /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD8D8DE0148367E900B275FE /* MainWindow.xib */; };
 		DD8D8DE5148367E900B275FE /* CellsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8D8DE4148367E900B275FE /* CellsViewController.m */; };
 		DD8D8DE8148367E900B275FE /* CellsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD8D8DE6148367E900B275FE /* CellsViewController.xib */; };
+		DD8D8DEF148375F900B275FE /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD8D8DEE148375F900B275FE /* CustomCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		DD8D8DE3148367E900B275FE /* CellsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CellsViewController.h; sourceTree = "<group>"; };
 		DD8D8DE4148367E900B275FE /* CellsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CellsViewController.m; sourceTree = "<group>"; };
 		DD8D8DE7148367E900B275FE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CellsViewController.xib; sourceTree = "<group>"; };
+		DD8D8DEE148375F900B275FE /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				DD8D8DE3148367E900B275FE /* CellsViewController.h */,
 				DD8D8DE4148367E900B275FE /* CellsViewController.m */,
 				DD8D8DE6148367E900B275FE /* CellsViewController.xib */,
+				DD8D8DEE148375F900B275FE /* CustomCell.xib */,
 				DD8D8DD5148367E900B275FE /* Supporting Files */,
 			);
 			path = Cells;
@@ -151,6 +154,7 @@
 				DD8D8DD9148367E900B275FE /* InfoPlist.strings in Resources */,
 				DD8D8DE2148367E900B275FE /* MainWindow.xib in Resources */,
 				DD8D8DE8148367E900B275FE /* CellsViewController.xib in Resources */,
+				DD8D8DEF148375F900B275FE /* CustomCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

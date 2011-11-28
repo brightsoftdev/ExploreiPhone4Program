@@ -10,6 +10,7 @@
 
 @implementation CellsViewController
 @synthesize computers;
+@synthesize tvCell;
 
 - (void)didReceiveMemoryWarning
 {
@@ -48,6 +49,7 @@
 - (void)viewDidUnload
 {
     self.computers = nil;
+    self.tvCell = nil;
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -65,7 +67,8 @@
 - (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return [self.computers count];
 }
-
+/*
+//使用程式碼建立cells
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *CellTableIdentifier = @"CellTableIdentifier";
     
@@ -120,5 +123,29 @@
     
     return cell;
 }
-
+*/
+//使用nib建立cells
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    static NSString *CellTableIdentifier = @"CellTableIdentifier";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellTableIdentifier];
+    
+    if (cell == nil) {
+        NSArray *nib = [[NSBundle mainBundle]loadNibNamed:@"CustomCell" owner:self options:nil];
+        if ([nib count] > 0) {
+            cell = self.tvCell;
+        } else {
+            NSLog(@"failed to loaf CoustomCell nib file!");
+        }
+    }
+    NSUInteger row = [indexPath row];
+    NSDictionary *rowData = [self.computers objectAtIndex:row];
+    
+    UILabel *colorLabel = (UILabel *)[cell viewWithTag:kColorValueTag];
+    colorLabel.text = [rowData objectForKey:@"Color"];
+    
+    UILabel *nameLabel = (UILabel *)[cell viewWithTag:kNameValueTag];
+    nameLabel.text = [rowData objectForKey:@"Name"];
+    return cell;
+}
 @end

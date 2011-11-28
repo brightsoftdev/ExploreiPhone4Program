@@ -13,8 +13,11 @@
 @interface CellsViewController : UIViewController <UITabBarDelegate,UITableViewDataSource>{
     
     NSArray *computers;
+    UITableViewCell *tvCell;
+    
 }
 
 @property (nonatomic, retain) NSArray *computers;
+@property (nonatomic, retain) IBOutlet UITableViewCell *tvCell;
 
 @end
