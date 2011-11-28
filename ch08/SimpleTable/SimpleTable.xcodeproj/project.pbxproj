@@ -16,6 +16,8 @@
 		DD8D8DAF1482B24000B275FE /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD8D8DAD1482B24000B275FE /* MainWindow.xib */; };
 		DD8D8DB21482B24000B275FE /* SimpleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8D8DB11482B24000B275FE /* SimpleTableViewController.m */; };
 		DD8D8DB51482B24000B275FE /* SimpleTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD8D8DB31482B24000B275FE /* SimpleTableViewController.xib */; };
+		DD8D8DBC1483605200B275FE /* star2.png in Resources */ = {isa = PBXBuildFile; fileRef = DD8D8DBB1483605200B275FE /* star2.png */; };
+		DD8D8DBE1483606000B275FE /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = DD8D8DBD1483606000B275FE /* star.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		DD8D8DB01482B24000B275FE /* SimpleTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleTableViewController.h; sourceTree = "<group>"; };
 		DD8D8DB11482B24000B275FE /* SimpleTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleTableViewController.m; sourceTree = "<group>"; };
 		DD8D8DB41482B24000B275FE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SimpleTableViewController.xib; sourceTree = "<group>"; };
+		DD8D8DBB1483605200B275FE /* star2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = star2.png; path = "../../../../Begin_iPhone4_Projects_2011_01_21/08 - Simple Table/star2.png"; sourceTree = "<group>"; };
+		DD8D8DBD1483606000B275FE /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = star.png; path = "../../../../Begin_iPhone4_Projects_2011_01_21/08 - Simple Table/star.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +56,8 @@
 		DD8D8D8C1482B24000B275FE = {
 			isa = PBXGroup;
 			children = (
+				DD8D8DBD1483606000B275FE /* star.png */,
+				DD8D8DBB1483605200B275FE /* star2.png */,
 				DD8D8DA11482B24000B275FE /* SimpleTable */,
 				DD8D8D9A1482B24000B275FE /* Frameworks */,
 				DD8D8D981482B24000B275FE /* Products */,
@@ -151,6 +157,8 @@
 				DD8D8DA61482B24000B275FE /* InfoPlist.strings in Resources */,
 				DD8D8DAF1482B24000B275FE /* MainWindow.xib in Resources */,
 				DD8D8DB51482B24000B275FE /* SimpleTableViewController.xib in Resources */,
+				DD8D8DBC1483605200B275FE /* star2.png in Resources */,
+				DD8D8DBE1483606000B275FE /* star.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

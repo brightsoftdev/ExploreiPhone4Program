@@ -53,15 +53,67 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
     static NSString *SimpleTableIdentifier = @"SimpleTableIdentifier";
+    
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:SimpleTableIdentifier];
+    
     if (cell == nil) {
         cell = [[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:SimpleTableIdentifier]autorelease];
+        //cell = [[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:SimpleTableIdentifier]autorelease];
+        //cell = [[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:SimpleTableIdentifier]autorelease];
+        //cell = [[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue2 reuseIdentifier:SimpleTableIdentifier]autorelease];
     }
+    
+    UIImage *image = [UIImage imageNamed:@"star.png"];
+    cell.imageView.image = image;
+    
+    UIImage *image2 = [UIImage imageNamed:@"star2.png"];
+    cell.imageView.highlightedImage = image2;
     
     NSUInteger row = [indexPath row];
     cell.textLabel.text = [listData objectAtIndex:row];
+    
+    cell.textLabel.font = [UIFont boldSystemFontOfSize:50];
+    
+    if (row < 7) {
+        cell.detailTextLabel.text = @"Mr. Disney";
+    } else {
+        cell.detailTextLabel.text = @"Mr. Tolkine";
+    }
+    
     return cell;
     
+}
+
+- (NSInteger)tableView:(UITableView *)tableView indentationLevelForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    NSInteger row = [indexPath row];
+    return row;
+}
+//階層顯示
+- (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+
+    NSInteger row = [indexPath row];
+    if (row == 0) {
+        return nil;
+    }
+    return indexPath;
+}
+//選取動作
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    NSInteger row = [indexPath row];
+    NSString *rowValue = [listData objectAtIndex:row];
+    
+    NSString *message = [[NSString alloc]initWithFormat:@"You selected %@",rowValue];
+    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Row Selected!" message:message delegate:nil cancelButtonTitle:@"Yes, I did" otherButtonTitles: nil];
+    [alert show];
+    [alert release];
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 70;
 }
 @end
